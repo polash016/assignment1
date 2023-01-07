@@ -1,212 +1,203 @@
-*{
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
+* {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
 }
-.header{
-    background-image: url(../images/banner/banner3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: right;
-    padding-top: 216px;
-    padding-right: 230px;
-    padding-bottom: 265px;
-    margin-bottom: auto;
-    background-position: center;
-    height: 100%; 
-    justify-content: space-between;
+/* banner **NOTE- when i zoom out my internet browser image get cropped in bottom */
+.header {
+  background-image: url(../images/banner/banner3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: right;
+  padding-top: 216px;
+  padding-right: 230px;
+  padding-bottom: 265px;
+  background-position: center;
+  height: 100%;
+  justify-content: space-around;
+}
 
+.nav-title {
+  font-size: 65px;
+  font-weight: 700;
+  color: white;
 }
-.nav-title{
-font-size: 65px;
-font-weight: 700;
-color: white;
+.nav-description {
+  color: white;
+  font-size: 16px;
+}
+.nav-btn {
+  padding: 21px 25px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 53px;
+  border-radius: 5px;
+  border: 0;
+}
+/* failure section{***NOTE-i tried a lot to change the ul>li position but i couldn't find the problem.i got a variety of solution from internet didn't work.  */
+.failure {
+  display: flex;
+  margin: 140px 230px 140px 230px;
+  gap: 86px;
+  justify-content: space-between;
+  
+}
 
+.failure-header {
+  padding-top: 220px;
+  font-weight: 700;
+  font-size: 50px;
+  color: black;
 }
-.nav-description{
-    color: white;
-    font-size: 16px;
-}
-.nav-btn{
-    padding: 21px 25px;
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 53px;
-    border-radius: 5px;
-    border: 0;
-}
-.failure{
-    display: flex;
-    margin: 140px 230px;
-    gap: 86px;
-    background-color: beige;  
-}
-/* .failure-img{
-  object-fit: contain;
-} */
-.right-sec{
-    padding-left: 85px;
-    margin-left: 85px;
-    
-    
-}
-.failure-header{
-    padding-top: 220px;
-    font-weight: 700;
-    font-size: 50px;
-    color: black;
-    
-}
-.failure-description{
+.failure-description {
+    width: 416px;
+    left: 862px;
     padding-top: 25px;
     padding-bottom: 16px;
-    
     font-weight: 400;
     font-size: 16px;
-   
+    margin-right: 206px;
+  
 }
-ul{
-    
-
-    
-}
-ul li:before{
-    content: '✓';
+ul li:before {
+    content: "✓";
     padding-right: 10px;
-    color: rgb(31, 239, 31);
+  color: rgb(31, 239, 31);
 }
 ul li{
-    padding-top: 10px;
-    list-style: none;
-    padding-right: 65px;
+  padding-top: 10px;
+  list-style: none;
+  width: 349px;
+left: 862px;
+
+  
 }
-.plans{
-    margin: 0px 240px;
-    background-color: bisque;
+/* my plan section */
+.plans {
+
+    /* margin-left: 230px;
+    margin-right: 230px; */
     
 }
-.plan-content{
-    display: flex;
-    
-    justify-content: center;
-    
 
+
+.plan-content {
+  display: flex;
+  gap: 90px;
+  justify-content: space-between;
+  margin: 90px 240px 130px 229px;
+  text-align: center;
+ padding: 0px 90px;
+ padding-inline: 0px 86px ;
+ 
+ 
 }
 
-.plan-title{
-font-size: 30px;
-color: #151414;
-text-align: center;
-
-/* padding-bottom: 50px; */
+.plan-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #151414;
+  padding-bottom: 50px;
+  text-align: center;
 }
-.section-box{
-    margin: 50px 86px 30px 86px ;
-}
-.icon{
-   
-}
-.plan-sub-title{
-    font-size: 30px;
-color: #151414;
-
-}
-.description{
-
+  .description{
     font-size: 25px;
     font-weight: 500;
+  }
+
+  
+.plan-sub-title {
+  font-size: 30px;
+  color: #151414;
 }
-.grad{
-    /* background-image: url(../images/watch.png); */
-    height: 300px;
-    margin: 140px 240px;
-    background: linear-gradient(90deg, rgba(110, 110, 250, 0.897) 0%, rgb(245, 136, 0, 0) 100%), url(../images/watch.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: initial;
-    /* background-image: linear-gradient(90deg, #F15B22 0%, rgba(241, 91, 34, 0) 100%); */
-    border-radius: 8px;
-    font-weight: 700;
-    font-size: 40px;
-    color: azure;
-    padding-top: 60px;
-    padding-left: 64px;
+/* linear-gradient section */
+.grad {
+  height: 300px;
+  margin: 140px 240px;
+  background: linear-gradient(
+      90deg,
+      rgba(110, 110, 250, 0.897) 0%,
+      rgb(245, 136, 0, 0) 100%
+    ),
+    url(../images/watch.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: initial;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 40px;
+  color: azure;
+  padding-top: 60px;
+  padding-left: 64px;
 }
-.grd-btn{
-    font-size: 20px;
-    font-weight: 600;
-    color: rgba(110, 110, 250, 0.897);
-    border-radius: 5px;
-    border: none;
-    margin-top: 24px;
-    padding: 21px 36px;
+.grd-btn {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(110, 110, 250, 0.897);
+  border-radius: 5px;
+  border: none;
+  margin-top: 24px;
+  padding: 21px 36px;
 }
-/* .grad-text{
-    font-weight: 700;
-    font-size: 40px;
-    color: azure;
-    padding-top: 60px;
-    padding-left: 64px;
-} */
+
 /* footer */
-.footer{
-    display: flex;
-    gap: 330px;
-    background-color: #151414;
-    justify-content: space-between;
+.footer {
+  display: flex;
+  gap: 330px;
+  background-color: #151414;
+  justify-content: space-between;
 }
-.left-footer{
-color: white;
-margin-top: 130px;
-margin-left: 230px;
-margin-bottom: 130px;
-position: relative;
-width: 485px;
-height: 317px;
-
+.left-footer {
+  color: white;
+  margin-top: 130px;
+  margin-left: 230px;
+  margin-bottom: 130px;
+  position: relative;
+  width: 485px;
+  height: 317px;
 }
-.footer-title{
-font-size: 45px;
-font-weight: 700;
-padding-bottom: 16px;
+.footer-title {
+  font-size: 45px;
+  font-weight: 700;
+  padding-bottom: 16px;
 }
-.footer-description{
-font-size: 16px;
-font-weight: 400;
-padding-bottom: 24px;
+.footer-description {
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 24px;
 }
-.footer-icon{
-    padding-right: 18px;
-    padding-top: 16px;
+.footer-icon {
+  padding-right: 18px;
+  padding-top: 16px;
 }
-.right-footer{
- margin-right: 230px;
- margin-top: 130px;
- margin-bottom: 245px;
- width: 325px;
-height: 204px;
+.right-footer {
+  margin-right: 230px;
+  margin-top: 130px;
+  margin-bottom: 245px;
+  width: 325px;
+  height: 204px;
+  padding-right: 230px;
 }
-.rightf-title{
-    color: white;
-    font-size: 25px;
-    font-weight: 600;
-    padding-bottom: 30px;
+.rightf-title {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 30px;
 }
-.footer-btn{
-    color: white;
-    background-color: royalblue;
-    border-radius: 8px;
-    font-size: 20px;
-    font-weight: 600;
-    padding: 20px 36px;
-    margin-top: 16px;
+.footer-btn {
+  color: white;
+  background-color: royalblue;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px 36px;
+  margin-top: 16px;
 }
-.right-footer input[type="email"]{
-    font-size: 18px;
-    font-weight: 400px;
-    color: whitesmoke;
-    padding: 21px 70px 21px 15px;
-    border-color: white;
-    background-color: black;
-    border-radius: 8px;
+.right-footer input[type="email"] {
+  font-size: 18px;
+  font-weight: 400px;
+  color: whitesmoke;
+  padding: 21px 70px 21px 15px;
+  border-color: white;
+  background-color: black;
+  border-radius: 8px;
 }
-
